@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="page-header">
@@ -77,7 +78,7 @@
                   Фильтр
               </h3>
            <fieldset class="catalog-filter-group">
-                <legend class="class-filter-tittle">
+                <legend class="class-filter-title">
                   Цвет  
                 </legend>
                 <ul class="catalog-filter-list"
@@ -150,9 +151,10 @@
               </button>
             </form>
             <section class="sort">
-                <h3 class="sort-tittle">Сортировка</h3>
-            <select class="select-control"
-            aria-label="Сортировка">
+                <h3 class="sort-tittle">
+                  Сортировка
+                </h3>
+            <select class="select-control" aria-label="Сортировка">
                 <option value="popular">
                     Популярное
                 </option>
@@ -163,7 +165,7 @@
                     Дорогое
                 </option>
             </select>
-            <div class="img-item">
+            <div class="slider-button-nav">
                 <button class="slider-button slider-up" type="button">
                   <span class="visually-hidden">
                       Вверх
@@ -242,7 +244,8 @@
                  </a>
              </div>
             </li>
-        <li><div class="product-card">
+        <li>
+          <div class="product-card">
                 <a class="product-card-link" href="product.html">
                      <img class="product-card-image" src="#" 
                      alt="Селфи-палка Следуй за мной">
