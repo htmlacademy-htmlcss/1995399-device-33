@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="./style/style.css">
   </head>
   <body>
     <header class="page-header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
-            <img class="logo" src="#" alt="Логотип магазина Девайс">
+            <img class="logo" src="./images/logo-black.svg" width="145" height="36" alt="Логотип магазина Девайс">
           </a>
           <div class="navigation-list">
              <div class="navigation-item">
@@ -19,22 +20,25 @@
                 </button>
               </form>
               <ul>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Войти</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Сравнить</a>
-            </li>
-             <li class="navigation-item">
-              <a class="navigation-link" href="#">Корзина</a>
-            </li>
-            </li>
+                <li class="navigation-item">
+                  <img class="login" src="./images/icons-login.svg" width="13" height="12" alt="Войти">
+                  <a class="navigation-link" href="#">Войти</a>
+                </li>
+                <li class="navigation-item">
+                  <img class="compare" src="./images/icons-compare.svg" width="10" height="12" alt="Диаграмма">
+                  <a class="navigation-link" href="#">Сравнить</a>
+                </li>
+                 <li class="navigation-item">
+                   <img class="shopping-cart" width="31" height="21" src="./images/shopping-cart.svg" alt="Корзина">
+                  <a class="navigation-link" href="#">Корзина</a>
+                </li>
               </ul>
            </div>
           <div class ="bottom-navigation-list">
           <ul>
             <li class="bottom-navigation-item">
               <a class="bottom-navigation-link" href="#">Каталог товаров</a>
+              <img width="50" height="50" src="./images/plus.svg" alt="Каталог плюс">
             </li>
             <li class="bottom-navigation-item">
               <a class="bottom-navigation-link" href="#">Доставка</a>
@@ -77,7 +81,7 @@
                   Фильтр
               </h3>
            <fieldset class="catalog-filter-group">
-                <legend class="class-filter-tittle">
+                <legend class="class-filter-title">
                   Цвет  
                 </legend>
                 <ul class="catalog-filter-list"
@@ -150,9 +154,10 @@
               </button>
             </form>
             <section class="sort">
-                <h3 class="sort-tittle">Сортировка</h3>
-            <select class="select-control"
-            aria-label="Сортировка">
+                <h3 class="catalog-filter">
+                  Сортировка
+                </h3>
+            <select class="select-control" aria-label="Сортировка">
                 <option value="popular">
                     Популярное
                 </option>
@@ -163,7 +168,7 @@
                     Дорогое
                 </option>
             </select>
-            <div class="img-item">
+            <div class="slider-button-nav">
                 <button class="slider-button slider-up" type="button">
                   <span class="visually-hidden">
                       Вверх
@@ -175,17 +180,20 @@
                     </span>
                 </button>
              </div>
-            <li><div class="product-card">
+            <li>
+              <section class="catalog-section">
+              <div class="product-card">
                  <ul>
                     <a class="product-card-link" href="product.html">
-                     <img class="product-card-image" src="#" 
+                     <img class="product-card-image" src="./images/2selfi-ordinary.png" 
                      alt="Любительская селфи-палка">
                      <dl>
-                     <dt><h4 class="product-card-title">
+                     <dt>
+                       <h4 class="product-card-title">
                          Любительская селфи-палка
                      </h4>
                     </dt>
-                    <dd>
+                    <dd class="cost">
                     500 ₽
                     </dd>
                     </dl>
@@ -194,14 +202,15 @@
              </div>
             <li><div class="product-card">
                 <a class="product-card-link" href="product.html">
-                     <img class="product-card-image" src="#" 
+                     <img class="product-card-image" width="360" height="380" src="./images/2selfi-prof.png" 
                      alt="Профессиональная селфи-палка">
                      <dl>
-                     <dt><h4 class="product-card-title">
+                     <dt>
+                       <h4 class="product-card-title">
                         Профессиональная селфи-палка
                      </h4>
                     </dt>
-                    <dd>
+                    <dd class="cost">
                    1 500 ₽
                     </dd>
                     </dl>
@@ -211,47 +220,33 @@
         <li>
             <div class="product-card">
                 <a class="product-card-link" href="product.html">
-                     <img class="product-card-image" src="#" 
-                     alt="Профессиональная селфи-палка">
-                     <dl>
-                     <dt><h4 class="product-card-title">
-                        Профессиональная селфи-палка
-                     </h4>
-                    </dt>
-                    <dd>
-                   1 500 ₽
-                    </dd>
-                    </dl>
-                 </a>
-             </div>
-            </li>
-        <li>
-            <div class="product-card">
-                <a class="product-card-link" href="product.html">
-                     <img class="product-card-image" src="#" 
+                     <img class="product-card-image" width="360" height="380" src="./images/2selfi-unsinkable.png" 
                      alt="Непотопляемая селфи-палка">
                      <dl>
-                     <dt><h4 class="product-card-title">
+                     <dt>
+                       <h4 class="product-card-title">
                         Непотопляемая селфи-палка
                      </h4>
                     </dt>
-                    <dd>
+                    <dd class="cost">
                    2 500 ₽
                     </dd>
                     </dl>
                  </a>
              </div>
             </li>
-        <li><div class="product-card">
+        <li>
+          <div class="product-card">
                 <a class="product-card-link" href="product.html">
-                     <img class="product-card-image" src="#" 
+                     <img class="product-card-image" width="360" height="380" src="./images/2selfi-hand.png" 
                      alt="Селфи-палка Следуй за мной">
                      <dl>
-                     <dt><h4 class="product-card-title">
+                     <dt>
+                       <h4 class="product-card-title">
                         Селфи-палка "Следуй за мной"
                      </h4>
                     </dt>
-                    <dd>
+                    <dd class="cost">
                    1 500 ₽
                     </dd>
                     </dl>
@@ -266,11 +261,12 @@
                 </button>
             </div>
             </section>
+          </section>
       </main>
-        <footer class="page-footer">
+      <footer class="page-footer">
         <div class="footer-address">
-          <img class="logo-footer" src="#" alt="Логотип магазина Девайс">
-          <address>Санкт-Петербург, набережная<br>
+          <img class="logo-footer" width="144.9" height="36" src="./images/logo-yellow.svg" alt="Логотип магазина Девайс">
+          <address class="address">Санкт-Петербург, набережная<br>
             реки Карповки, 5, литера П.</address>
           </div>
         <section class="footer-advantages">
@@ -284,16 +280,19 @@
           <ul class="footer-social-list">
             <li class="footer-social-item">
             <a class="button" href="#">
+              <img class="Twitter" width="9" height="18" src="./images/facebook.svg">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="#">
+              <img class="Twitter" width="16" height="16" src="./images/Instagram.svg">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="#">
+              <img class="Twitter" width="15" height="14.06" src="./images/Twitter.svg">
               <span class="visually-hidden">Twitter</span>
             </a>
           </li>
@@ -301,9 +300,11 @@
         </section>
         <section class="footer-contact">
           <a href="tel:+78128121212">
-          Тел.: +7 (812) 812-12-12</a>
-          <img class="logo-footer-htmlacademy" src="#" alt="Логотип Htmlacademy">
+          Тел.: +7 (812) 812-12-12
+        </a>
+          <img class="logo-footer-htmlacademy" width="115" height="33" src="./images/logo-htmlacademy.svg" alt="Логотип Htmlacademy">
       </section>
     </footer>
   </body>
-</html>
+  </html>
+  
