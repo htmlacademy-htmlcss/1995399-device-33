@@ -204,4 +204,95 @@ body {
     line-height: 20px;
     text-decoration-line: underline;
     color: #FFFFFF;
+    text-decoration: none;
+}
+
+.inner-header-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    color: #000000;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.shop-device-link {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.catalog-filter {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    color: #000000;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.class-filter-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+
+.control {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.catalog-section{
+    background-color: #FFFFFF;
+}
+
+.catalog-filter-show {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    color: #000000;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.select-control {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.product-card-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;  
+    letter-spacing: -0.02em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.cost{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    color: #444444;
+}
+
+.button-download {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    color: #000000;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
 }
