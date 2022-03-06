@@ -9,33 +9,37 @@
     <header class="header">
       <img class="header__logo" src="./images/logo-black.svg" width="145" height="36" alt="Логотип магазина Девайс">
         <nav class="navigation">
-          <div class="navigation__top-wrapper">
-            <form class="navigation-top-wrapper__search-text" action="https://echo.htmlacademy.ru">
-              <input class="field" placeholder="Текст поиска">
-                <button class="navigation-top-wrapper__button" type="submit">
-                Найти
-                </button>
-            </form>
-              <ul class="navigation-top-wrapper__list">
-                <li class="navigation-top-wrapper__item navigation-top-wrapper__item--login">
-                  <img class="navigation-top-wrapper-item__image" src="./images/icons-login.svg" width="13" height="12" alt="Войти">
-                    <a class="navigation-top-wrapper__link" href="#">Войти</a>
-                </li>
-                <li class="navigation-top-wrapper__item navigation-top-wrapper__item--compare">
-                  <img class="navigation-top-wrapper-item__image" src="./images/icons-compare.svg" width="10" height="12" alt="Диаграмма">
-                    <a class="navigation-top-wrapper__link" href="#">Сравнить</a>
-                </li>
-                <li class="navigation-top-wrapper__item navigation-top-wrapper__item--shopping-cart">
-                  <img class="navigation-top-wrapper-item__image" width="31" height="21" src="./images/shopping-cart.svg" alt="Корзина">
-                    <a class="navigation-top-wrapper__link" href="#">Корзина</a>
-                </li>
-              </ul>
-          </div>
+          <div class="navigation__container">
+            <div class="navigation__top-wrapper">
+                <form class="navigation-top-wrapper__search-text" action="https://echo.htmlacademy.ru">
+                  <input class="field" placeholder="Текст поиска">
+                    <button class="navigation-top-wrapper__button" type="submit">
+                    Найти
+                    </button>
+                  </form>
+                  <ul class="navigation-top-wrapper__list">
+                    <li class="navigation-top-wrapper__item navigation-top-wrapper__item--login">
+                      <img class="navigation-top-wrapper-item__image--login" src="./images/icons-login.svg" width="13" height="12" alt="Войти">
+                        <a class="navigation-top-wrapper__link" href="#">Войти</a>
+                    </li>
+                  <li class="navigation-top-wrapper__item navigation-top-wrapper__item--compare">
+                    <img class="navigation-top-wrapper-item__image--compare" src="./images/icons-compare.svg" width="10" height="12" alt="Диаграмма">
+                      <a class="navigation-top-wrapper__link" href="#">Сравнить</a>
+                  </li>
+                  <li class="navigation-top-wrapper__item navigation-top-wrapper__item--shopping-cart">
+                    <img class="navigation-top-wrapper-item__image--shopping-cart" width="31" height="21" src="./images/shopping-cart.svg" alt="Корзина">
+                      <a class="navigation-top-wrapper__link" href="#">Корзина</a>
+                  </li>
+                </ul>
+            </div>
           <div class="navigation__bottom-wrapper">
             <ul class="navigation-bottom-wrapper__list">
               <li class="navigation-bottom-wrapper__item navigation-bottom-wrapper__item--catalog">
-                <a class="navigation-bottom-wrapper__link" href="catalog.html">Каталог товаров
-                  <img width="50" height="50" src="./images/plus.svg" alt="Каталог плюс">
+                <a class="navigation-bottom-wrapper__link" href="catalog.html">
+                  <span class="navigation-bottom-wrapper__link--text">
+                  Каталог товаров
+                  </span>
+                    <img class="navigation-bottom-wrapper__link--image" width="50" height="50" src="./images/plus.svg" alt="Каталог плюс">
                 </a>
               </li>
               <li class="navigation-bottom-wrapper__item navigation-bottom-wrapper__item--delivery">
@@ -48,28 +52,30 @@
                 <a class="navigation-bottom-wrapper__link" href="#">Контакты</a>
               </li>
             </ul>
-          </div>
+        </div>
         </nav>
     </header>
     <main class="main">
-      <div class="main__container">
+      <div class="container">
         <h1 class="visually-hidden">Интернет-магазин Девайс</h1>
             <div class="main__slider">
+              <div ="wrapper">
               <button class="main-slider__button main-slider__button--prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
               </button>
                 <button class="main-slider__button main-slider__button--next" type="button">
                   <span class="visually-hidden">Следующее фото</span>
                 </button>
+                </div>
                   <ol class="main-slider__list">
                     <li class="main-slider__item main-slider__item--quadrocopter">
                       <div class="main-slider-item__wrapper">
                         <img class="main-slider-item-wrapper__image" src="./images/slider-1quadrocopter.png" width="560" height="560" alt="Квадрокоптер">
                           <div class="main-slider-item-wrapper__description">
-                            <p class="main-slider-item-wrapper-description__text--big">
+                            <p class="main-slider-item-wrapper__description--big">
                               Порхает как бабочка, жалит как пчела!
                             </p>
-                            <p class="main-slider-item-wrapper-description__text--small">
+                            <p class="main-slider-item-wrapper__description--small">
                             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                             </p> 
                               <a class="main-slider-item-wrapper-description__link" href="#">Подробнее</a>
@@ -94,7 +100,7 @@
                     </li>
                     <li class="main-slider__item main-slider__item--fitness">
                       <div class="main-slider-item__wrapper">
-                        <img class=main-slider-item-wrapper__image" src="./images/slider-2fitness.png" width="560" height="560" alt="Фитнес-браслет">
+                        <img class="main-slider-item-wrapper__image" src="./images/slider-2fitness.png" width="560" height="560" alt="Фитнес-браслет">
                           <div class="main-slider-item-wrapper__description">
                             <p class="main-slider-item-wrapper__description--big">
                               Худеем правильно!
@@ -119,7 +125,7 @@
                     <li class="main-slider__item main-slider__item--selfi">
                         <div class="main-slider-item__wrapper">
                           <img class="main-slider-item-wrapper__image" src="./images/slider-3selfi-monopods.png" width="560" height="560" alt="Селфи-палки">
-                            <div class="container-slide-image-text">
+                            <div class="main-slider-item-wrapper__description">
                               <p class="main-slider-item-wrapper__description--big">
                                 Делай селфи, как Бен Стиллер!
                               </p>
@@ -127,7 +133,7 @@
                                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                                 </p>  
                                   <a class="main-slider-item-wrapper-description__link" href="#">Подробнее</a>
-                                    <div class=main-slider-item-wrapper__advantages">
+                                    <div class="main-slider-item-wrapper__advantages">
                                       <dl class="main-slider-item-wrapper-advantages__list">
                                         <dt class="main-slider-item-wrapper-advantages__item main-slider-item-wrapper-advantages__item--range">
                                           8,5 м
@@ -175,7 +181,9 @@
                       </li>
                     </ol>
                   </div>
-            </div>
+          </div>
+        </div>
+          <div class="container"> 
             <div class="main__catalog-container">
               <ol class="main-catalog__list">
                 <li class="main-catalog-list__item">
@@ -198,7 +206,10 @@
                 </li>
               </ol>
             </div>
+          </div>
             <section class="main__services">
+              <div class="container">
+                <div class="wrapper">
               <ul role="tablist" class="main-services__list">
                 <li role="presentation" class="main-services-list__item main-services-list__item--delivery">
                     <a class="main-services-list-item__link" role="tab" href="#section1" id="tab1" aria-selected="true">
@@ -216,15 +227,21 @@
                     </a>
                 </li>
               </ul>
-                <section class="main-services__tablist" role="tabpanel" id="section1" aria-labelledby="tab1">
+                <section class="main-services__tablist main-services__tablist--delivery" role="tabpanel" id="section1" aria-labelledby="tab1">
+                  <div class="main-services__tablist-container">
+                  <div class="main-services__tablist-container-left">
                   <h2 class="main-services-tablist__tittle main-services-tablist__tittle--delivery">Доставка</h2>
                     <p class="main-services-tablist__description main-services-tablist__description--delivery">Мы с удовольствием доставим ваш товар прямо
                       к вашему подъезду совершенно бесплатно! Ведь
                       мы неплохо заработаем, поднимая его на ваш этаж.
                     </p>
+                  </div>
+                  <div class="main-services__tablist-container-image">
                       <img class="main-services-tablist__image main-services-tablist__image--delivery" src="./images/courier.png" width="136" height="164" alt="Courier">
+                  </div>
+                </div>
                 </section>
-                <section class="main-services__tablist" role="tabpanel" id="section2" aria-labelledby="tab2" hidden>
+                <section class="main-services__tablist main-services__tablist--guarantee" role="tabpanel" id="section2" aria-labelledby="tab2" hidden>
                   <h2 class="main-services-tablist__tittle main-services-tablist__tittle--guarantee">Гарантия</h2>
                     <p class="main-services-tablist__description main-services-tablist__description--guarantee">Если из-за возгорания купленного у нас товара у вас
                       сгорит дом — не переживайте, мы выдадим вам новый.
@@ -232,7 +249,7 @@
                     </p>
                       <img class="main-services-tablist__image main-services-tablist__image--guarantee" src="./images/Guarantee.png" width="171" height="195" alt="Guarantee">
                 </section>
-                <section class="main-services__tablist" role="tabpanel" id="section3" aria-labelledby="tab3" hidden>
+                <section class="main-services__tablist main-services__tablist--credit" role="tabpanel" id="section3" aria-labelledby="tab3" hidden>
                   <h2 class="main-services-tablist__tittle main-services-tablist__tittle--credit">Кредит</h2>
                     <p class="main-services-tablist__description main-services-tablist__description--credit">Залезть в долговую яму стало проще! 
                       Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
@@ -240,8 +257,11 @@
                     </p>
                       <img class="main-services-tablist__image main-services-tablist__image--porter" src="./images/Porter.png" width="156" height="188" alt="Porter">
                 </section>
+              </div>
+            </div>
             </section>
             <div class="main__button">
+              <div class="container">
               <button class="main__button--delivery">
                 <img class="main-button__image" width="47" height="31" src="./images/truck.svg" alt="Грузовик с доставкой">
                   <p class="main-button__text">
@@ -249,7 +269,11 @@
                   </p>
               </button>
             </div>
+            </div>
             <section class="main__bottom-description">
+              <div class="container">
+              <div class="container-bottom">
+              <div class="wrapper">
               <div class="main-bottom-description__left-column">
                 <h2 class="main-bottom-description__title main-bottom-description__title--about-us">О нас</h2>
                   <p class="main-bottom-description__text main-bottom-description__text--top">Огромный выбор гаджетов не оставит равнодушным гика,
@@ -259,13 +283,13 @@
                      уголки России транспортными компаниями:
                     </p>
                       <ul class="main-bottom-description__list--companies">
-                        <li>
+                        <li class="main-bottom-description__item main-bottom-description__item--mel-lines">
                           <b>Меловые линии</b>
                         </li>
-                        <li>
+                        <li class="main-bottom-description__item main-bottom-description__item--sdek">
                           <b>СДИК</b>
                         </li>
-                        <li>
+                        <li class="main-bottom-description__item main-bottom-description__item--tox-berry">
                           <b>ТоксБерри</b>
                         </li>
                       </ul>
@@ -277,22 +301,30 @@
                     Вы можете забрать товар сами, заехав в наш офис.<br>
                     Заодно сможете проверить работоспособность покупки. 
                   </p>
-                <h2 class="main-bottom-description__title main-bottom-description__title--address">Интернет-магазин «Девайс»</h2>
+                <h2 class="main-bottom-description__title-small main-bottom-description__title-small--address">Интернет-магазин «Девайс»</h2>
                   <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
                     <p class="connection-contacts-number"><span>+7 (812) 812-12-12</span></p>
-                      <h2 class="main-bottom-description__title main-bottom-description__title--work-time">Время работы</h2>
+                      <h2 class="main-bottom-description__title-small main-bottom-description__title-small--work-time">Время работы</h2>
                         <p class="main-bottom-description__text--work-time">пн—пт: с 10:00 до 22:00 <br>сб—вс: с 10:00 до 19:00</p>
                           <a class="main-bottom-description__link" href="#">Напишите нам</a>
-              </div>
-            </section>
+            </div>
+            </div>
+            </div>
+          </section>
             <section class="main__newsletter">
-              <h2 class="main-newsletter__title">Подпишитесь на рассылку</h2>
+              <div class="container">
+                <div clas="main-newsletter__wrapper">
+                  <div class="wrapper">
+              <h2 class="main-newsletter__title">Подпишитесь<br> на рассылку</h2>
                 <p class="main-newsletter__description">Еженедельный дайджест с обзорами новинок,<br>
                   длительными тест-драйвами, распаковками, а также акции,<br>
                   спецпредложения и вот это вот всё.
                 </p>
+                </div>
+                <div class="main-newsletter__wrapper-right">
+                <div class="wrapper">
                   <form class="main-newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
-                   <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                   <input class="field-bottom" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                     required>
                     <button class="main-newsletter__button" type="submit">
                       Подписаться
@@ -300,9 +332,13 @@
                   </form>
                     <p class="main-newsletter__free">
                       <img src="./images/tick.svg" width="16" height="16" alt="Галочка">
-                        Это бесплатно</p>
+                        Это бесплатно
+                      </p>
+                  </div>
+                  </div>
+                </div>
+                </div>
             </section>
-      </div>
     </main>
     <footer class="footer">
       <div class="footer__container">
