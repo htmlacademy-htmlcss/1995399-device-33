@@ -7,6 +7,7 @@
   </head>
   <body>
     <header class="header">
+      <a class="header-logo__link" href="index.html">
        <svg class="header__logo" width="153" height="45" viewBox="0 0 153 45" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_14702_609)">
         <path d="M31.2188 0.388916V35.6889H23.6135V33.2889C21.9124 35.1889 19.5107 36.3889 16.1084 36.3889C9.5038 36.3889 4 30.5889 4 23.0889C4 15.5889 9.5038 9.78892 16.1084 9.78892C19.5107 9.78892 22.0124 10.9889 23.6135 12.8889V0.388916H31.2188ZM23.6135 23.0889C23.6135 19.2889 21.1118 16.8889 17.6094 16.8889C14.107 16.8889 11.6052 19.2889 11.6052 23.0889C11.6052 26.8889 14.107 29.2889 17.6094 29.2889C21.1118 29.1889 23.6135 26.8889 23.6135 23.0889Z" fill="black"/>
@@ -30,6 +31,7 @@
         </filter>
         </defs>
         </svg>
+      </a>
         <nav class="navigation">
           <div class="navigation__container">
             <div class="navigation-top">
@@ -101,7 +103,7 @@
         </div>
         </div>
         <div class="main-inner__catalog-wrapper">
-        <div class="main-inner-catalog-wrapper__left-column">
+        <div class="main-inner-catalog__left-column">
           <section class="main-inner__catalog-filter">
             <h3 class="main-inner-catalog-filter__title main-inner-catalog-filter__title--filter">
               Фильтр
@@ -168,7 +170,7 @@
                 </form>
           </section>
         </div>
-        <div class="main-inner-catalog-wrapper__right-column">
+        <div class="main-inner-catalog__right-column">
             <section class="main-inner__catalog-items">
               <div class="right-column__container">
                 <h3 class="main-inner-catalog-filter__title main-inner-catalog-filter__title--sort">
@@ -189,7 +191,7 @@
                       <ul class="sorting__list">
                       <li class="sorting__item">
                         <button class="main-inner__slider-button main-inner__slider-button--slider-up" type="button">
-                          <svg aria-hidden="true" focusable="false"width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg class="slider-button__image" aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 0L11.5 10H0.5" fill="black"/>
                             </svg>                            
                         <span class="visually-hidden">
@@ -199,7 +201,7 @@
                     </li>
                       <li class="sorting__item">
                         <button class="main-inner__slider-button main-inner__slider-button--slider-down" type="button">
-                          <svg aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg class="slider-button__image" aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black"/>
                           </svg>                            
                         <span class="visually-hidden">
@@ -215,6 +217,14 @@
                         <li class="product-cards__item">
                           <a class="product-cards__link" href="product.html">
                             <img class="product-cards__image product-cards__image--amatuer" src="./images/2selfi-ordinary.png" alt="Любительская селфи-палка">
+                            <div class="hidden-text">
+                              <div class="catalog-more-container">
+                                <div>
+                                  <a class="catalog-more__link" href="#">Подробнее</a>
+                                </div>
+                                <div class="catalog-more__undercover"></div>
+                              </div>
+                            </div>
                               <dl class="product-cards__list cards__list--amatuer">
                                 <dt class="product-cards-list__title">
                                   <h4>
@@ -230,6 +240,14 @@
                           <li class="product-cards__item">
                             <a class="product-cards__link" href="product.html">
                               <img class="product-cards__image product-cards__image--professional" width="360" height="380" src="./images/2selfi-prof.png" alt="Профессиональная селфи-палка">
+                              <div class="hidden-text">
+                                <div class="catalog-more-container">
+                                  <div>
+                                    <a class="catalog-more__link" href="#">Подробнее</a>
+                                  </div>
+                                  <div class="catalog-more__undercover"></div>
+                                </div>
+                              </div>
                                 <dl class="product-cards__list product-cards__list--professional">
                                   <dt class="product-cards-list__title">
                                     <h4>
@@ -245,6 +263,14 @@
                             <li class="product-cards__item">
                               <a class="product-cards__link" href="product.html">
                                 <img class="product-cards__image product-cards__image--unsinkable" width="360" height="380" src="./images/2selfi-unsinkable.png" alt="Непотопляемая селфи-палка">
+                                <div class="hidden-text">
+                                  <div class="catalog-more-container">
+                                    <div>
+                                      <a class="catalog-more__link" href="#">Подробнее</a>
+                                    </div>
+                                    <div class="catalog-more__undercover"></div>
+                                  </div>
+                                </div>
                                   <dl class="product-cards__list product-cards__list--unsinkable">
                                     <dt class="product-cards-list__title">
                                       <h4>
@@ -260,6 +286,14 @@
                               <li class="product-cards__item">
                                 <a class="product-cards__link" href="product.html">
                                   <img class="product-cards__image product-cards__image--hand" width="360" height="380" src="./images/2selfi-hand.png" alt="Селфи-палка Следуй за мной">
+                                  <div class="hidden-text">
+                                    <div class="catalog-more-container">
+                                      <div>
+                                        <a class="catalog-more__link" href="#">Подробнее</a>
+                                      </div>
+                                      <div class="catalog-more__undercover"></div>
+                                    </div>
+                                  </div>
                                     <dl class="product-cards__list product-cards__list--hand">
                                       <dt class="product-cards-list__title">
                                         <h4>
@@ -283,11 +317,11 @@
                   </span>
                 </button>
                 <ol class="main-inner-pagination-button__list">
-                  <li>1</li>
-                  <li>2</li>
-                  <li>3</li>
-                  <li>...</li>
-                  <li>15</li>
+                  <li class="pagination-button__item">1</li>
+                  <li class="pagination-button__item">2</li>
+                  <li class="pagination-button__item">3</li>
+                  <li class="pagination-button__item">...</li>
+                  <li class="pagination-button__item">15</li>
                 </ol>
                 <button class="main-inner__button main-inner__button--forward">
                   <span class="button-forward__text button-text">
